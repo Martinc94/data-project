@@ -1,5 +1,3 @@
-# data-project
-
 # Project title
 ## Data Representation and Querying Project 2015
 ### Martin Coleman
