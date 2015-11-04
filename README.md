@@ -34,20 +34,63 @@ Field | Description
  
 ## List of Libraries in a town
 You can get a list of Libraries in a given town using the GET method at the following URL:
+
 *http://galwaylibrariesapi.ie/town/[town]*
+
 where you replace [Town] with the town.
 For example, the URL:
+
 *http://galwaylibrariesapi.ie/town/tuam*
+
 will return a list of Libraries in tuam town and some contact information.
 The data will be returned in JSON format, with the following properties for each Libraries:
 
     - *Name*: the Name of the Library.
     - *Phone*: the Phone Number of the Library.
     - *Email*: the Email address of the Library.
-    ...
+
 An example of a response would be:
 
     ```json
     [ {"Name": TUAM LIBRARY, "Phone": "+353 (0) 93 24287", "Email": tuam@galwaylibrary.ie}, {...}, ...]
     ```
 
+
+
+## List of all library names in galway
+You can get a list of all the Library names in co. galway using the GET method at the following URL:
+
+*http://galwaylibrariesapi.ie/name/all*
+
+The data will be returned in JSON format, with the following properties for each Libraries:
+
+    - *Name*: the Name of the Library.
+
+An example of a response would be:
+
+    ```json
+    [ {"Name": WESTSIDE LIBRARY}, {"Name": ROUNDSTONE PUBLIC LIBRARY}, ...]
+    ```
+
+
+## Opening hours of Libraries on a given day
+You can get a list of Opening hours of Libraries on a given day in a given town using the GET method at the following URL:
+
+*http://galwaylibrariesapi.ie/hours/[town]/[day]*
+
+where you replace [Town] with the town.
+For example, the URL:
+
+*http://galwaylibrariesapi.ie/Hours/galwaycity/monday*
+
+will return a list of Opening hours of Libraries on a given day in a given town.
+The data will be returned in JSON format, with the following properties for each Libraries:
+
+    - *Name*: the Name of the Library.
+    - *Hours*: the opening hours of the Library on given day.
+
+An example of a response would be:
+
+    ```json
+    [ {"Name":  WESTSIDE LIBRARY , "hours": 11.00am to 8.00pm}, {...}, ...]
+    ```
