@@ -3,7 +3,7 @@
 ### Martin Coleman
 
 ## Introduction
-```This project provides the design and documentation for the dataset "Dataset title" which is available at [data.gov.ie](http://data.gov.ie)...```
+```This project provides the design and documentation for the dataset "County Galway Libraries " which is available at [data.gov.ie](https://data.gov.ie/dataset/county-galway-libraries)...```
 
 
 
@@ -11,12 +11,29 @@
 
 
 ## About the data
-This dataset was received in Comma Separated Values (CSV) format, and was downloaded from [*insert page name*](insert url).
-The CSV file contains 1001 rows, the first being a header row with the names of each field.
-There are six values on each line, which are as follows:
-    - **year**: the year that the car was purchased.
-    - **price**: the price of the car.
-    
+This dataset was received in Comma Separated Values (CSV) format, and was downloaded from [County Galway Libraries](https://data.gov.ie/dataset/county-galway-libraries).
+The CSV file contains 30 rows, the first being a header row with the names of each field.
+There are 25 values on each line
+
+The most relevant are as follows:
+
+Field | Description
+------|------------
+ Name  | The Library's Name.
+ Address1  | First street address.
+ Address2  | Second street address.
+ Town      | Town where library is situated.
+ Postcode  | Library's Postcode.
+ Phone| Library's Phone number.
+ Email| Library's Email Address.
+ Website| Library's Website URL.
+ Opening Hours Monday| Mondays Opening hours.
+ Opening Hours Tuesday| Tuesdays Opening hours.
+ Opening Hours Wednesday| Wednesdays Opening hours.
+ Opening Hours Thursday| Thursdays Opening hours.
+ Opening Hours Friday| Fridays Opening hours.
+ Opening Hours Saturday| Saturdays Opening hours.
+ ObjectId | The Library's unique id.
     
     
  
@@ -38,4 +55,3 @@ An example of a response would be:
     ```json
     [ {"price": 20000, "model": "Skoda", ...}, {...}, ...]
     ```
-
