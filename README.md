@@ -3,17 +3,13 @@
 ### Martin Coleman
 
 ## Introduction
-```This project provides the design and documentation for the dataset "County Galway Libraries " which is available at [data.gov.ie](https://data.gov.ie/dataset/county-galway-libraries)...```
-
-
-
-
+```This project provides the design and documentation for the dataset "County Galway Libraries " which is available at [data.gov.ie](https://data.gov.ie/dataset/county-galway-libraries)```
 
 
 ## About the data
 This dataset was received in Comma Separated Values (CSV) format, and was downloaded from [County Galway Libraries](https://data.gov.ie/dataset/county-galway-libraries).
 The CSV file contains 30 rows, the first being a header row with the names of each field.
-There are 25 values on each line
+There are 23 values on each line.
 
 The most relevant are as follows:
 
@@ -36,8 +32,6 @@ Field | Description
  ObjectId | The Library's unique id.
     
     
- 
- 
  
 
 ## List of cars for a given year
