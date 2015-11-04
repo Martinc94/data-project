@@ -43,7 +43,7 @@ For example, the URL:
 *http://galwaylibrariesapi.ie/town/tuam*
 
 will return a list of Libraries in tuam town and some contact information.
-The data will be returned in JSON format, with the following properties for each Libraries:
+The data will be returned in JSON format, with the following properties for each Library:
 
     - *Name*: the Name of the Library.
     - *Phone*: the Phone Number of the Library.
@@ -62,7 +62,7 @@ You can get a list of all the Library names in co. galway using the GET method a
 
 *http://galwaylibrariesapi.ie/name/all*
 
-The data will be returned in JSON format, with the following properties for each Libraries:
+The data will be returned in JSON format, with the following properties for each Library:
 
     - *Name*: the Name of the Library.
 
@@ -84,7 +84,7 @@ For example, the URL:
 *http://galwaylibrariesapi.ie/Hours/galwaycity/monday*
 
 will return a list of Opening hours of Libraries on a given day in a given town.
-The data will be returned in JSON format, with the following properties for each Libraries:
+The data will be returned in JSON format, with the following properties for each Library:
 
     - *Name*: the Name of the Library.
     - *Hours*: the opening hours of the Library on given day.
@@ -106,7 +106,7 @@ For example, the URL:
 
 *http://galwaylibrariesapi.ie/athenry/url*
 
-The data will be returned in JSON format, with the following properties for each Libraries:
+The data will be returned in JSON format, with the following properties for the given Library:
 
     - *url*: the Website of the Library.
 
