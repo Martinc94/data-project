@@ -30,8 +30,7 @@ Field | Description
  Opening Hours Friday| Fridays Opening hours.
  Opening Hours Saturday| Saturdays Opening hours.
  ObjectId | The Library's unique id.
-    
-    
+ 
  
 ## List of Libraries in a town
 You can get a list of Libraries in a given town using the GET method at the following URL:
@@ -41,31 +40,14 @@ For example, the URL:
 *http://galwaylibrariesapi.ie/town/tuam*
 will return a list of Libraries in tuam town and some contact information.
 The data will be returned in JSON format, with the following properties for each Libraries:
+
     - *Name*: the Name of the Library.
     - *Phone*: the Phone Number of the Library.
     - *Email*: the Email address of the Library.
     ...
 An example of a response would be:
+
     ```json
     [ {"Name": TUAM LIBRARY, "Phone": "+353 (0) 93 24287", "Email": tuam@galwaylibrary.ie}, {...}, ...]
     ```
 
-
-
-
-
-## List of cars for a given year
-You can get a list of cars purchased in a given year using the GET method at the following URL:
-*http://carsapi.com/year/[year]*
-where you replace [year] with the year.
-For example, the URL:
-*http://carsapi.com/year/2005*
-will return a list of cars purchased in 2005.
-The data will be returned in JSON format, with the following properties for each car:
-    - *price*: the price of the car.
-    - *model*: the model of the car.
-    ...
-An example of a response would be:
-    ```json
-    [ {"price": 20000, "model": "Skoda", ...}, {...}, ...]
-    ```
