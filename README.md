@@ -3,7 +3,7 @@
 ### Martin Coleman
 
 ## Introduction
-```This project provides the design and documentation for the dataset "County Galway Libraries " which is available at [data.gov.ie](https://data.gov.ie/dataset/county-galway-libraries)```
+```This project provides the design and documentation for the dataset "County Galway Libraries" which is available at [data.gov.ie](https://data.gov.ie/dataset/county-galway-libraries)```
 
 
 ## About the data
@@ -81,7 +81,7 @@ You can get a list of Opening hours of Libraries on a given day in a given town 
 where you replace [Town] with the town.
 For example, the URL:
 
-*http://galwaylibrariesapi.ie/Hours/galwaycity/monday*
+*http://galwaylibrariesapi.ie/Hours/galwaycity/tuesday*
 
 will return a list of Opening hours of Libraries on a given day in a given town.
 The data will be returned in JSON format, with the following properties for each Library:
