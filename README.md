@@ -1,4 +1,4 @@
-# Project title
+# County Galway Libraries API Design
 ## Data Representation and Querying Project 2015
 ### Martin Coleman
 
@@ -33,6 +33,26 @@ Field | Description
     
     
  
+## List of Libraries in a town
+You can get a list of Libraries in a given town using the GET method at the following URL:
+*http://galwaylibrariesapi.ie/town/[town]*
+where you replace [Town] with the town.
+For example, the URL:
+*http://galwaylibrariesapi.ie/town/tuam*
+will return a list of Libraries in tuam town and some contact information.
+The data will be returned in JSON format, with the following properties for each Libraries:
+    - *Name*: the Name of the Library.
+    - *Phone*: the Phone Number of the Library.
+    - *Email*: the Email address of the Library.
+    ...
+An example of a response would be:
+    ```json
+    [ {"Name": TUAM LIBRARY, "Phone": "+353 (0) 93 24287", "Email": tuam@galwaylibrary.ie}, {...}, ...]
+    ```
+
+
+
+
 
 ## List of cars for a given year
 You can get a list of cars purchased in a given year using the GET method at the following URL:
