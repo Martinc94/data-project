@@ -94,3 +94,24 @@ An example of a response would be:
     ```json
     [ {"Name":  WESTSIDE LIBRARY , "hours": 11.00am to 8.00pm}, {...}, ...]
     ```
+
+
+##  Return library website 
+You can get a website URL for a library given its name using the GET method at the following URL:
+
+*http://galwaylibrariesapi.ie/[name]/url*
+
+where you replace [name] with the name of the library.
+For example, the URL:
+
+*http://galwaylibrariesapi.ie/athenry/url*
+
+The data will be returned in JSON format, with the following properties for each Libraries:
+
+    - *url*: the Website of the Library.
+
+An example of a response would be:
+
+    ```json
+    [ {"url": http://www.galway.ie/en/Services/Library/}]
+    ```
