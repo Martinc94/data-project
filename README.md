@@ -52,7 +52,10 @@ The data will be returned in JSON format, with the following properties for each
 An example of a response would be:
 
     ```json
-    [ {"Name": TUAM LIBRARY, "Phone": "+353 (0) 93 24287", "Email": tuam@galwaylibrary.ie}, {...}, ...]
+    [ {"Name": TUAM LIBRARY, 
+       "Phone": "+353 (0) 93 24287", 
+       "Email": tuam@galwaylibrary.ie}, 
+       {...}, ...]
     ```
 
 
@@ -69,7 +72,9 @@ The data will be returned in JSON format, with the following properties for each
 An example of a response would be:
 
     ```json
-    [ {"Name": WESTSIDE LIBRARY}, {"Name": ROUNDSTONE PUBLIC LIBRARY}, ...]
+    [ {"Name": WESTSIDE LIBRARY}, 
+      {"Name": ROUNDSTONE PUBLIC LIBRARY}
+      {...} ...]
     ```
 
 
@@ -92,7 +97,9 @@ The data will be returned in JSON format, with the following properties for each
 An example of a response would be:
 
     ```json
-    [ {"Name":  WESTSIDE LIBRARY , "hours": 11.00am to 8.00pm}, {...}, ...]
+    [ {"Name":  WESTSIDE LIBRARY , 
+       "hours": 11.00am to 8.00pm}, 
+        {...}, ...]
     ```
 
 
