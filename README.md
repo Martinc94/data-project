@@ -120,5 +120,5 @@ The data will be returned in JSON format, with the following properties for the 
 An example of a response would be:
 
     ```json
-    [ {"url": http://www.galway.ie/en/Services/Library/}]
+    [ {"url": http://www.galway.ie/en/Services/Library}]
     ```
