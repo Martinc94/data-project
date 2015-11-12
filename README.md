@@ -32,7 +32,7 @@ Field | Description
  ObjectId | The Library's unique id.
  
  
-## List of Libraries in a town
+## List of libraries in a town
 You can get a list of Libraries in a given town using the GET method at the following URL:
 
 *http://galwaylibrariesapi.ie/town/[town]*
@@ -78,15 +78,15 @@ An example of a response would be:
     ```
 
 
-## Opening hours of Libraries on a given day
+## Opening hours of libraries on a given day
 You can get a list of Opening hours of Libraries on a given day in a given town using the GET method at the following URL:
 
-*http://galwaylibrariesapi.ie/hours/[town]/[day]*
+*http://galwaylibrariesapi.ie/hours/[town]?[day]*
 
 where you replace [Town] with the town.
 For example, the URL:
 
-*http://galwaylibrariesapi.ie/Hours/galwaycity/tuesday*
+*http://galwaylibrariesapi.ie/Hours/galwaycity?tuesday*
 
 will return a list of Opening hours of Libraries on a given day in a given town.
 The data will be returned in JSON format, with the following properties for each Library:
@@ -121,4 +121,46 @@ An example of a response would be:
 
     ```json
     [ {"url": http://www.galway.ie/en/Services/Library}]
+    ```
+
+
+##  Delete library  
+You can delete a library given its name using the delete method at the following URL:
+
+*http://galwaylibrariesapi.ie/delete?[name]*
+
+where you replace [name] with the name of the library.
+For example, the URL:
+
+*http://galwaylibrariesapi.ie/delete/westsidelibrary*
+
+The data will be returned in JSON format, with the following properties for the given Library:
+
+    - *message*: Library Deleted Sussessful.
+
+An example of a response would be:
+
+    ```json
+    [ {"message": Delete Successful}]
+    ```
+ 
+ 
+ ##  Add library  
+You can add a library at the following URL:
+
+*http://galwaylibrariesapi.ie/add?[name]=value1&[town]=value3&[phone]=value4&[email]=value5*
+
+where you replace [item] with the [Values] of the library.
+For example, the URL:
+
+*http://galwaylibrariesapi.ie/add?name=tuamlibrary&town=tuam&phone=09312345&email=tuam@galwaylibrary.ie*
+
+The data will be returned in JSON format, with the following properties for the given Library:
+
+    - *message*: Library Added Sussessful.
+
+An example of a response would be:
+
+    ```json
+    [ {"message": Library Addition Successful}]
     ```
