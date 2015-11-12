@@ -132,7 +132,7 @@ You can delete a library given its name using the delete method at the following
 where you replace [name] with the name of the library.
 For example, the URL:
 
-*http://galwaylibrariesapi.ie/delete/westsidelibrary*
+*http://galwaylibrariesapi.ie/delete?westsidelibrary*
 
 The data will be returned in JSON format, with the following properties for the given Library:
 
